@@ -70,3 +70,9 @@ bytes_data = bytes([int(byte, 2) for byte in binary_data.split()])
 print(bytes_data)
 # b'Test'
 
+binary_data = 0b1111011
+
+bytes_data = binary_data.to_bytes(1, byteorder='big')
+print(bytes_data)
+# b'{'
+
